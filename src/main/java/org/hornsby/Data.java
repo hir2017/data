@@ -18,8 +18,10 @@ public class Data {
   public static final String getUrlBase_jpy = "http://service.fx168.com/cftc/GetData.ashx?code=JAPANESE%20YEN%20-%20CHICAGO%20MERCANTILE%20EXCHANGE&date=";
   public static final String getUrlBase_nzd = "http://service.fx168.com/cftc/GetData.ashx?code=NEW%20ZEALAND%20DOLLAR%20-%20CHICAGO%20MERCANTILE%20EXCHANGE&date=";
   public static final String getUrlBase_chf="http://service.fx168.com/cftc/GetData.ashx?code=SWISS%20FRANC%20-%20CHICAGO%20MERCANTILE%20EXCHANGE&date=";
+  public static final String getUrlBase_gld = "http://service.99qh.com/cftc2/GetData.ashx?code=GOLD%20-%20COMMODITY%20EXCHANGE%20INC.&type=FutOnly&date=";
 
   enum DataSource{
+	gld("GLD",getUrlBase_gld,"data_gold.txt"),
     gbp("GBP",getUrlBase_gbp,"data_gbp.txt"),
     cad("CAD",getUrlBase_chf,"data_cad.txt"),
     jpy("JPY",getUrlBase_jpy,"data_jpy.txt"),
